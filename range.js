@@ -1,7 +1,8 @@
 let number = document.querySelector('.number');
 let range = document.querySelector('.range');
 let body = document.querySelector('body');
-
+body.style.background = `rgba(0,0,0, ${range.value/100})`;
+number.value = range.value;
 document.addEventListener('input', (event) => {
     if (event.target == number) {
         range.value = event.target.value;
