@@ -12,8 +12,10 @@ document.addEventListener('mousemove', (event) => {
 });
 circle.addEventListener('click', (event) => {
     if (circle.style.backgroundColor != 'black') {
-        event.target.style.backgroundColor = 'black';
-    } else circle.style.backgroundColor = 'blueviolet';
+        circle.style.backgroundColor = 'black';
+    } else {
+        circle.style.backgroundColor = 'blueviolet';
+    }
 });
 
 document.addEventListener('keydown', (event) => {
